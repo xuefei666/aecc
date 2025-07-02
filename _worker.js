@@ -1,7 +1,7 @@
 
 // 部署完成后在网址后面加上这个，获取自建节点和机场聚合节点，/?token=auto或/auto或
 
-let mytoken = 'auto';
+let mytoken = '6666';
 let guestToken = ''; //可以随便取，或者uuid生成，https://1024tools.com/uuid
 let BotToken = ''; //可以为空，或者@BotFather中输入/start，/newbot，并关注机器人
 let ChatID = ''; //可以为空，或者@userinfobot中获取，/start
@@ -14,6 +14,50 @@ let timestamp = 4102329600000;//2099-12-31
 //节点链接 + 订阅链接
 let MainData = `
 https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray
+hysteria2://ab508c49-514c-40d3-b1fb-5af057ed11ab@192.9.176.249:20000?sni=www.bing.com&insecure=1&mport=20000-55000#%F0%9F%87%A6%F0%9F%87%BA%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%E6%82%89%E5%B0%BC2
+hysteria2://ab508c49-514c-40d3-b1fb-5af057ed11ab@204.10.194.86:20000?sni=www.bing.com&insecure=1&mport=20000-55000#%F0%9F%87%B3%F0%9F%87%B1%E8%8D%B7%E5%85%B0%E4%B8%93%E7%BA%BF
+hysteria2://ab508c49-514c-40d3-b1fb-5af057ed11ab@138.2.2.120:20000?sni=www.bing.com&insecure=1&mport=20000-55000#%F0%9F%87%AF%F0%9F%87%B5%E6%97%A5%E6%9C%AC%E4%B8%93%E7%BA%BF
+hysteria2://ab508c49-514c-40d3-b1fb-5af057ed11ab@168.138.184.187:20000?sni=www.bing.com&insecure=1&mport=20000-55000#%F0%9F%87%B8%F0%9F%87%AC%E6%96%B0%E5%8A%A0%E5%9D%A1%E4%B8%93%E7%BA%BF
+hysteria2://ab508c49-514c-40d3-b1fb-5af057ed11ab@132.226.235.134:20000?sni=www.bing.com&insecure=1&mport=20000-55000#%F0%9F%87%B0%F0%9F%87%B7%E9%9F%A9%E5%9B%BD%E4%B8%89%E7%BD%91%E4%B8%93%E7%BA%BF
+hysteria2://ab508c49-514c-40d3-b1fb-5af057ed11ab@152.70.234.101:20000?sni=www.bing.com&insecure=1&mport=20000-55000#%F0%9F%87%B0%F0%9F%87%B7%E9%9F%A9%E5%9B%BD%E4%B8%89%E7%BD%91%E4%B8%93%E7%BA%BF2
+hysteria2://ab508c49-514c-40d3-b1fb-5af057ed11ab@193.122.106.44:20000?sni=www.bing.com&insecure=1&mport=20000-55000#%F0%9F%87%B0%F0%9F%87%B7%E9%9F%A9%E5%9B%BD%E4%B8%89%E7%BD%91%E4%B8%93%E7%BA%BF3
+hysteria2://ab508c49-514c-40d3-b1fb-5af057ed11ab@158.179.164.122:20000?sni=www.bing.com&insecure=1&mport=20000-55000#%F0%9F%87%B0%F0%9F%87%B7%E9%9F%A9%E5%9B%BD%E4%B8%93%E7%BA%BF2
+hysteria2://ab508c49-514c-40d3-b1fb-5af057ed11ab@129.148.39.249:20000?sni=www.bing.com&insecure=1&mport=20000-55000#%F0%9F%87%A7%F0%9F%87%B7%E5%B7%B4%E8%A5%BF%E4%B8%93%E7%BA%BF
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@3bd9.55dca.e048.f1-fef1f.yfjcs.com:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=yfjp.xn--4gq62f52gppi29k.com&fp=chrome&type=tcp&headerType=none#%F0%9F%87%AF%F0%9F%87%B5%E4%BA%9A%E9%A9%AC%E9%80%8A%E6%97%A5%E6%9C%AC1%E5%8F%B7
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@3bd9.55dca.e048.f2-fef1f.yfjcs.com:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=yfjp.xn--4gq62f52gppi29k.com&fp=chrome&type=tcp&headerType=none#%F0%9F%87%AF%F0%9F%87%B5%E4%BA%9A%E9%A9%AC%E9%80%8A%E6%97%A5%E6%9C%AC2%E5%8F%B7
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@3bd9.55dca.e048.f3-fef1f.yfjcs.com:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=yfjp.xn--4gq62f52gppi29k.com&fp=safari&type=tcp&headerType=none#%F0%9F%87%AF%F0%9F%87%B5%E4%BA%9A%E9%A9%AC%E9%80%8A%E6%97%A5%E6%9C%AC3%E5%8F%B7
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@3bd9.55dca.e048.f4-fef1f.yfjcs.com:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=yfjp.xn--4gq62f52gppi29k.com&fp=ios&type=tcp&headerType=none#%F0%9F%87%AF%F0%9F%87%B5%E4%BA%9A%E9%A9%AC%E9%80%8A%E6%97%A5%E6%9C%AC4%E5%8F%B7
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@3bd9.55dca.e048.f7-fef1f.yfjcs.com:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=b295-23ap29-6bh.xn--4gq62f52gppi29k.com&fp=safari&type=tcp&headerType=none#%F0%9F%87%B8%F0%9F%87%AC%E4%BA%9A%E9%A9%AC%E9%80%8A%E6%96%B0%E5%8A%A0%E5%9D%A11%E5%8F%B7
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@3bd9.55dca.e048.f8-fef1f.yfjcs.com:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=yfsg-1.xn--4gq62f52gppi29k.com&fp=firefox&type=tcp&headerType=none#%F0%9F%87%B8%F0%9F%87%AC%E4%BA%9A%E9%A9%AC%E9%80%8A%E6%96%B0%E5%8A%A0%E5%9D%A12%E5%8F%B7
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@3bd9.55dca.e048.f9-fef1f.yfjcs.com:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=yfsg-1.xn--4gq62f52gppi29k.com&fp=chrome&type=tcp&headerType=none#%F0%9F%87%B8%F0%9F%87%AC%E4%BA%9A%E9%A9%AC%E9%80%8A%E6%96%B0%E5%8A%A0%E5%9D%A13%E5%8F%B7
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@3bd9.55dca.e048.f10-fef1f.yfjcs.com:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=yfsg-1.xn--4gq62f52gppi29k.com&fp=ios&type=tcp&headerType=none#%F0%9F%87%B8%F0%9F%87%AC%E4%BA%9A%E9%A9%AC%E9%80%8A%E6%96%B0%E5%8A%A0%E5%9D%A14%E5%8F%B7
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@204.10.194.78:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=yfnl1.xn--4gq62f52gppi29k.com&fp=safari&type=tcp&headerType=none#%F0%9F%87%B3%F0%9F%87%B1%E8%8D%B7%E5%85%B0%7C%20BT%E4%B8%8B%E8%BD%BD-0.1%E5%80%8D%E7%8E%87
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@104.18.22.235:443?encryption=none&security=tls&sni=nl1n.yfjc.sbs&fp=ios&type=ws&host=nl1n.yfjc.sbs&path=%2Fyfjc%2Fknl1#%F0%9F%87%B3%F0%9F%87%B1%E8%8D%B7%E5%85%B02%20%7C%20BT%E4%B8%8B%E8%BD%BD-0.1%E5%80%8D%E7%8E%87
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@141.253.124.138:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=b2-9fr2329-6bh.xn--4gq62f52gppi29k.com&fp=chrome&type=tcp&headerType=none#%F0%9F%87%AB%F0%9F%87%B7%E6%B3%95%E5%9B%BD%E5%B7%B4%E9%BB%8E2
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@144.24.206.147:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=b2-9fr5232-96bh.xn--4gq62f52gppi29k.com&fp=chrome&type=tcp&headerType=none#%F0%9F%87%AB%F0%9F%87%B7%E6%B3%95%E5%9B%BD%E9%A9%AC%E8%B5%9B
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@158.101.195.118:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=b295-23nl29-6bh.xn--4gq62f52gppi29k.com&fp=chrome&type=tcp&headerType=none#%F0%9F%87%B3%F0%9F%87%B1%E8%8D%B7%E5%85%B0%E9%98%BF%E5%A7%86%E6%96%AF%E7%89%B9%E4%B8%B9
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@192.9.247.127:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=b295-23ae29-6bh.xn--4gq62f52gppi29k.com&fp=chrome&type=tcp&headerType=none#%F0%9F%87%BA%F0%9F%87%B8%E7%BE%8E%E5%9B%BD%E5%9C%A3%E4%BD%95%E5%A1%9E2
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@64.181.255.250:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=b295-23ae29-6bh.xn--4gq62f52gppi29k.com&fp=safari&type=tcp&headerType=none#%F0%9F%87%BA%F0%9F%87%B8%E7%BE%8E%E5%9B%BD%E5%9C%A3%E4%BD%95%E5%A1%9E3
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@192.9.142.185:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=b295-23ae29-6bh.xn--4gq62f52gppi29k.com&fp=chrome&type=tcp&headerType=none#%F0%9F%87%BA%F0%9F%87%B8%E7%BE%8E%E5%9B%BD%E5%9C%A3%E4%BD%95%E5%A1%9E4
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@165.1.68.155:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=767w1-38dc0-9ocf2.xn--4gq62f52gppi29k.com&fp=chrome&type=tcp&headerType=none#%F0%9F%87%BA%F0%9F%87%B8%E7%BE%8E%E5%9B%BD%E5%9C%A3%E4%BD%95%E5%A1%9E5
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@3bd9.55dca.e048.f61-fef1f.yfjcs.com:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=yfhk1.xn--4gq62f52gppi29k.com&fp=chrome&type=tcp&headerType=none#%F0%9F%87%AD%F0%9F%87%B0%E9%A6%99%E6%B8%AF1%E5%8F%B7
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@3bd9.55dca.e048.f62-fef1f.yfjcs.com:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=yfhk1.xn--4gq62f52gppi29k.com&fp=chrome&type=tcp&headerType=none#%F0%9F%87%AD%F0%9F%87%B0%E9%A6%99%E6%B8%AF2%E5%8F%B7
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@3bd9.55dca.e048.f63-fef1f.yfjcs.com:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=yfhk2.xn--4gq62f52gppi29k.com&fp=firefox&type=tcp&headerType=none#%F0%9F%87%AD%F0%9F%87%B0%E9%A6%99%E6%B8%AF3%E5%8F%B7
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@3bd9.55dca.e048.f64-fef1f.yfjcs.com:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=yfhk2.xn--4gq62f52gppi29k.com&fp=safari&type=tcp&headerType=none#%F0%9F%87%AD%F0%9F%87%B0%E9%A6%99%E6%B8%AF4%E5%8F%B7
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@140.238.101.15:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=767w1-38dc0-9icf2.xn--4gq62f52gppi29k.com&fp=safari&type=tcp&headerType=none#%F0%9F%87%AC%F0%9F%87%A7%E8%8B%B1%E5%9B%BD%E4%BC%A6%E6%95%A6
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@193.123.187.39:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=767w1-38dc0-9kcf2.xn--4gq62f52gppi29k.com&fp=ios&type=tcp&headerType=none#%F0%9F%87%AC%F0%9F%87%A7%E8%8B%B1%E5%9B%BD%E4%BC%A6%E6%95%A62
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@141.147.33.180:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=767w1-85dc0-9yjd.xn--4gq62f52gppi29k.com&fp=safari&type=tcp&headerType=none#%F0%9F%87%A9%F0%9F%87%AA%E5%BE%B7%E5%9B%BD%E6%B3%95%E5%85%B0%E5%85%8B%E7%A6%8F
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@104.18.22.235:443?encryption=none&security=tls&sni=yfjcjp1.yfjc.sbs&fp=ios&type=ws&host=yfjcjp1.yfjc.sbs&path=%2Fyfjc%2Fjp1#%F0%9F%87%AF%F0%9F%87%B5%E6%97%A5%E6%9C%AC
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@104.18.22.235:443?encryption=none&security=tls&sni=yfjcjp2.yfjc.sbs&fp=safari&type=ws&host=yfjcjp2.yfjc.sbs&path=%2Fyfjc%2Fjp1#%F0%9F%87%AF%F0%9F%87%B5%E6%97%A5%E6%9C%AC2
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@104.18.15.15:443?encryption=none&security=tls&fp=safari&type=ws&host=yfjcus1.yfjc.sbs&path=%2Fyfjc%2Fus1#%F0%9F%87%BA%F0%9F%87%B8%E7%BE%8E%E5%9B%BD1%E5%8F%B7-0.1%E5%80%8D%E7%8E%87
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@104.18.15.15:443?encryption=none&security=tls&fp=safari&type=ws&host=yfjcus2.yfjc.sbs&path=%2Fyfjc%2Fus2#%F0%9F%87%BA%F0%9F%87%B8%E7%BE%8E%E5%9B%BD2%E5%8F%B7-0.1%E5%80%8D%E7%8E%87
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@104.18.15.15:443?encryption=none&security=tls&fp=ios&type=ws&host=yfjcus3.yfjc.sbs&path=%2Fyfjc%2Fus3#%F0%9F%87%BA%F0%9F%87%B8%E7%BE%8E%E5%9B%BD3%E5%8F%B7-0.1%E5%80%8D%E7%8E%87
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@104.18.15.15:443?encryption=none&security=tls&fp=ios&type=ws&host=yfjcus4.yfjc.sbs&path=%2Fyfjc%2Fus4#%F0%9F%87%BA%F0%9F%87%B8%E7%BE%8E%E5%9B%BD4%E5%8F%B7-0.1%E5%80%8D%E7%8E%87
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@104.18.15.15:443?encryption=none&security=tls&fp=chrome&type=ws&host=yfjcus5.yfjc.sbs&path=%2Fyfjc%2Fus5#%F0%9F%87%BA%F0%9F%87%B8%E7%BE%8E%E5%9B%BD5%E5%8F%B7-0.1%E5%80%8D%E7%8E%87
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@104.18.15.15:443?encryption=none&security=tls&fp=chrome&type=ws&host=yfjcus6.yfjc.sbs&path=%2Fyfjc%2Fus6#%F0%9F%87%BA%F0%9F%87%B8%E7%BE%8E%E5%9B%BD6%E5%8F%B7-0.1%E5%80%8D%E7%8E%87
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@104.18.15.15:443?encryption=none&security=tls&fp=chrome&type=ws&host=yfjcus7.yfjc.sbs&path=%2Fyfjc%2Fus7#%F0%9F%87%BA%F0%9F%87%B8%E7%BE%8E%E5%9B%BD7%E5%8F%B7-0.1%E5%80%8D%E7%8E%87
+vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@104.18.15.15:443?encryption=none&security=tls&fp=safari&type=ws&host=yfjcus8.yfjc.sbs&path=%2Fyfjc%2Fus8#%F0%9F%87%BA%F0%9F%87%B8%E7%BE%8E%E5%9B%BD8%E5%8F%B7-0.1%E5%80%8D%E7%8E%87
+
 `;
 
 let urls = [];
