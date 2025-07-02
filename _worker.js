@@ -13,7 +13,6 @@ let timestamp = 4102329600000;//2099-12-31
 
 //节点链接 + 订阅链接
 let MainData = `
-https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray
 hysteria2://ab508c49-514c-40d3-b1fb-5af057ed11ab@192.9.176.249:20000?sni=www.bing.com&insecure=1&mport=20000-55000#%F0%9F%87%A6%F0%9F%87%BA%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%E6%82%89%E5%B0%BC2
 hysteria2://ab508c49-514c-40d3-b1fb-5af057ed11ab@204.10.194.86:20000?sni=www.bing.com&insecure=1&mport=20000-55000#%F0%9F%87%B3%F0%9F%87%B1%E8%8D%B7%E5%85%B0%E4%B8%93%E7%BA%BF
 hysteria2://ab508c49-514c-40d3-b1fb-5af057ed11ab@138.2.2.120:20000?sni=www.bing.com&insecure=1&mport=20000-55000#%F0%9F%87%AF%F0%9F%87%B5%E6%97%A5%E6%9C%AC%E4%B8%93%E7%BA%BF
