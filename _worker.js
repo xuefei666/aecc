@@ -79,7 +79,7 @@ vless://ab508c49-514c-40d3-b1fb-5af057ed11ab@158.101.195.118:443?encryption=none
 
 let urls = [];
 let subConverter = "SUBAPI.cmliussss.net"; //在线订阅转换后端，目前使用CM的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
-let subConfig = "https://www.aecc.pro/asdfgh/custom.ini"; //订阅配置文件
+let subConfig = "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_MultiCountry.ini"; //订阅配置文件
 let subProtocol = 'https';
 
 export default {
